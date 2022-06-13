@@ -7,7 +7,9 @@ server-->browser: spa.js
 
 note over browser:
 browser starts executing js-code
-that requests JSON data from server and create HTML list with given data
+that requests JSON data from server and create HTML list with given data. 
+N.B. JSON data are store in local js variable as list of objects.
+This list is then used to create HTML <ul> with <li> elements.
 end note
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
