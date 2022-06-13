@@ -1,0 +1,16 @@
+title SPA Submit 
+
+note over browser:
+browser executes the event handler (onSubmit):
+- prevent default behaviour of page from reloading;
+- create js variable note with input submitted;
+- add note to notes list js variable;
+- browser renders notes to display through creation of new <ul> element with <li> children based on notes list.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server
+Send input note submitted by client to server: ex. { content: "HTML is easy", date: "2019-05-23" }
+end note
+server-->browser: Logged message in console
+
